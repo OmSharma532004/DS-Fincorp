@@ -14,7 +14,7 @@
     opacity: 0;
   }
 
-@media screen and (max-width:480px){
+@media screen and (max-width:400px){
   .toggle{
     opacity: 100;
   }
@@ -30,23 +30,33 @@
   .logo{
     opacity: 100;
     text-align: center;
-    margin-left: 30%;
+    margin-left: 20%;
 
   }
 
   .homepage-1{
+    
     display: flex;
     flex-direction: column;
     gap: 40px;
     text-align: center;
-    margin-right: 60px;
+    max-width: fit-content;
+   overflow-x: hidden;
+    max-width:350px;
+    height: auto;
+    
     
   }
-  
- 
+  .homepage-1 h1{
+    font-size:30px;
+  }
   .homepage-1 p{
     font-size: small;
+    height: auto;
+    width: 250px;
   }
+ 
+  
   .homepage-2{
     opacity: 0;
   }
