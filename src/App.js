@@ -6,7 +6,7 @@ import { Homepage } from './Components/pages/Homepage';
 
 function App() {
   return (
-    <div className="bg-gradient-to-r from-zinc-700 to-zinc-900 text-white  w-screen min-h-[100vh] overflow-y-auto ">
+    <div className=" overflow-x-hidden bg-gradient-to-r from-zinc-700 to-zinc-900 text-white  w-screen min-h-[100vh] overflow-y-auto ">
    <Navbar/>
    <Routes>
     <Route path="/" element={<Homepage/>}/>
