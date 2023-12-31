@@ -28,25 +28,25 @@ export const Homepage=()=>{
 
             </div>
             {/* ratings and all */}
-            <div className="relative homepage-2 mt-[100px]">
-  <ul className="ml-[200px] flex flex-wrap justify-center items-center">
+            <div className=" homepage-2 mt-[100px]">
+  <ul className="flex flex-wrap justify-between items-center">
     <li className="text-center w-full sm:w-1/2 md:w-1/4">
-      <FaRegFaceSmileBeam style={{ fontSize: '4em', color: 'yellow', margin: 'auto' }} />
+      <FaRegFaceSmileBeam style={{ fontSize: '2em', color: 'yellow', margin: 'auto' }} />
       <h2 className="text-2xl mt-4">50000+</h2>
       <p className="text-xl">Happy Customers</p>
     </li>
     <li className="text-center w-full sm:w-1/2 md:w-1/4">
-      <TiContacts style={{ fontSize: '4em', color: 'yellow', margin: 'auto' }} />
+      <TiContacts style={{ fontSize: '2em', color: 'yellow', margin: 'auto' }} />
       <h2 className="text-2xl mt-4">5000+</h2>
       <p className="text-xl">Relationship Managers</p>
     </li>
-    <li className="text-center w-full sm:w-1/2 md:w-1/4">
-      <CiBank style={{ fontSize: '4em', color: 'yellow', margin: 'auto' }} />
+    <li className="text-center bank w-full sm:w-1/2 md:w-1/4">
+      <CiBank style={{ fontSize: '2em', color: 'yellow', margin: 'auto' }} />
       <h2 className="text-2xl mt-4">50+</h2>
       <p className="text-xl text-center">Banks</p>
     </li>
     <li className="text-center w-full sm:w-1/2 md:w-1/4">
-      <TbGrowth style={{ fontSize: '4em', color: 'yellow', margin: 'auto' }} />
+      <TbGrowth style={{ fontSize: '2em', color: 'yellow', margin: 'auto' }} />
       <h2 className="text-2xl mt-4">50000+</h2>
       <p className="text-xl">Happy Customers</p>
     </li>
