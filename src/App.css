@@ -1,10 +1,10 @@
-.triangle {
+/* .triangle {
   width: 200px;
   transform: rotate(275deg);
   height: 1500px;
   background: linear-gradient(rgb(63 63 70), rgb(24 24 27));
   clip-path: polygon(0% 100%, 50% 0%, 100% 100%);
-}
+} */
 
   .para-2{
     opacity: 0;
@@ -34,19 +34,7 @@
 
   }
 
-  .homepage-1{
-    
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    max-width: fit-content;
-    margin-right: 70px;
-   
-    max-width:350px;
-    height: auto;
-    
-    
-  }
+
   .homepage-1 h1{
     font-size:30px;
   }
@@ -55,13 +43,13 @@
     height: auto;
     width: 250px;
   }
-  .homepage-2{
+  /* .homepage-2{
    width: 350px;
    margin-left: auto;
    margin-right: auto;
-  }
+  } */
  
-  .homepage-2  ul{
+  /* .homepage-2  ul{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -69,9 +57,9 @@
     
     
 
-  }
-  .homepage-2 ul li{
-    width: 40px;
+  } */
+  /* .homepage-2 ul li{ */
+    /* width: 40px;
     
     
   }
@@ -83,7 +71,7 @@
   }
   .homepage-2 ul li h2{
     font-size: small;
-  }
+  } */
 }
 
 
