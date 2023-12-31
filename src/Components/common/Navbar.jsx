@@ -38,7 +38,7 @@ export const Navbar =()=>{
                 
   
         <div className=" navbar border-b-[#2C333F] p-4  relative  text-yellow-300 w-screen ">
-            <ul className=" flex">
+            <ul className=" flex flex-wrap">
                 <li><div onClick={()=>{
                     toggleMenu()
                    
