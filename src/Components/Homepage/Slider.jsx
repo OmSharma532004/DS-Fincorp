@@ -41,7 +41,14 @@ const Slider = () => {
       <button className="nav-button" onClick={prevSlide}>
       <FaAngleLeft />
       </button>
-      <img src={photos[currentIndex]} alt={`slide-${currentIndex}`} />
+      <div className='flex  gap-[50px]  items-center justify-center slider '>
+      <img className=' rounded-xl' src={photos[currentIndex]}    alt={`slide-${currentIndex}`} />
+      <img className=' rounded-xl' src={photos[(currentIndex+1)%photos.length]}  alt={`slide-${currentIndex}`} />
+      <img className=' rounded-xl' src={photos[(currentIndex+2)%photos.length]}  alt={`slide-${currentIndex}`} />
+
+
+      </div>
+      
       <button className="nav-button-next" onClick={nextSlide}>
       <FaAngleRight />
       </button>

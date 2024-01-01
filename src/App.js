@@ -3,6 +3,7 @@ import './App.css';
 import { Navbar } from './Components/common/Navbar';
 import { Route,Routes } from 'react-router';
 import { Homepage } from './Components/pages/Homepage';
+import CreditScore from './Components/Homepage/CreditScore';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
    <Navbar/>
    <Routes>
     <Route path="/" element={<Homepage/>}/>
+    <Route path="/creditScore" element={<CreditScore/>}/>
    </Routes>
   
     </div>

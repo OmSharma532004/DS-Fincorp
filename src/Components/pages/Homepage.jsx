@@ -6,6 +6,10 @@ import { TiContacts } from "react-icons/ti";
 import { CiBank } from "react-icons/ci";
 import { TbGrowth } from "react-icons/tb";
 import Slider from "../Homepage/Slider";
+import CreditScore from "../Homepage/CreditScore";
+import { MdDone } from "react-icons/md";
+import credit from "../data/Homepage/credit.jpeg"
+import { Link } from "react-router-dom";
 
 
 export const Homepage=()=>{
@@ -74,7 +78,7 @@ export const Homepage=()=>{
            
   </div>
                {/* Slider Section */}
-              <div className="mt-8 mb-8 bg-yellow-500 max-w-[1100px] max-h-[400px] lg:w-screen lg:h-[400px] flex flex-row flex-wrap  justify-center gap-[50px] items-center">
+              <div className="mt-8 mb-8 bg-yellow-500   lg:w-screen lg:h-[400px] flex flex-row flex-wrap  justify-center gap-[50px] items-center">
                 <div>
                     <h5 className=" text-3xl  text-zinc-800">
                 The best offers from<br></br> India's most
@@ -82,7 +86,7 @@ export const Homepage=()=>{
                  </h5>
 
                 </div>
-                <div className="max-w-[500px] lg:w-[500px]  ">
+                <div className="lg:w-[800px]  ">
                 <Slider/>
                 </div>
                
@@ -92,6 +96,57 @@ export const Homepage=()=>{
 
                 </div>
             </section>
+
+
+              {/* Credit Score Section */}
+        <section className=" text-black flex flex-col flex-wrap justify-center mb-[50px] items-center  mt-8">
+          <div className=" flex flex-row w-screen gap-[40px] flex-wrap justify-center  ">
+            <div className=" bg-white feature lg:w-[40%] min-w-[300px] flex flex-row flex-wrap items-center justify-center ">
+               <div className=" w-[50%] mt-8">
+               <h1 className=" text-2xl ">View and improve your credit score - for free.</h1>
+                <ul className=" mt-8 mb-8 flex flex-col flex-wrap items-center justify-center ">
+                    <li className=" flex flex-row justify-center  gap-[20px] items-center"> <MdDone /><i>Know how good your score is</i></li>
+                    <li className=" flex flex-row justify-center  gap-[20px] items-center"> <MdDone /><i>Know how good your score is</i></li>
+                    <li className=" flex flex-row justify-center gap-[20px] items-center"> <MdDone /><i>Know how good your score is</i></li>
+                </ul>
+                <Link to={"/creditScore"}>
+                <button className=" bg-yellow-300 rounded-lg  w-[150px] h-[40px] mb-8 ">
+                    Evaluate Now
+                </button></Link>
+               
+               </div>
+
+               <div>
+                <img width={250} src={credit}></img>
+            </div>
+
+
+            </div>
+
+            <div className=" bg-white flex feature min-w-[300px] flex-row lg:w-[40%] flex-wrap items-center justify-center ">
+               <div className=" w-[50%] mt-8">
+               <h1 className=" text-2xl ">EMI CALCULATOR</h1>
+              <p className=" mt-8 mb-8">
+              "Empower your financial journey with precision. Calculate your monthly EMI with ease, ensuring a pathway to financial stability tailored to your needs."
+              </p>
+                <Link to={"/creditScore"}>
+                <button className=" bg-yellow-300 rounded-lg  w-[150px] h-[40px] mb-8 ">
+                    Evaluate Now
+                </button></Link>
+               
+               </div>
+
+               
+
+
+            </div>
+
+            
+           
+            
+           
+          </div>
+        </section>
             
            
         </div>
