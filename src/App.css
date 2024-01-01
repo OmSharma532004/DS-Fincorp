@@ -15,6 +15,10 @@
   }
 
 @media screen and (max-width:400px){
+
+  .feature{
+    width: 300px;
+  }
   .toggle{
     opacity: 100;
   }
