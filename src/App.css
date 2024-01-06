@@ -13,6 +13,13 @@
   .toggle{
     opacity: 0;
   }
+ 
+    .table, th, td {
+      border: 1px solid black;
+      padding: 10px;
+      scroll-behavior: auto;
+    }
+  
 
 @media screen and (max-width:400px){
 
@@ -22,15 +29,7 @@
   .toggle{
     opacity: 100;
   }
-  .home {
-    opacity: 0;
-  }
-  .about {
-    opacity: 0;
-  }
-  .contact {
-    opacity: 0;
-  }
+
   .logo{
     opacity: 100;
     text-align: center;
@@ -40,8 +39,9 @@
   .homepage-2{
     gap: 0px;
   }
-
-
+  .navbar-2 li{
+    opacity: 0;
+  }
   .homepage-1 h1{
     font-size:30px;
   }

@@ -1,6 +1,7 @@
 // EmiCalculator.js
 
 import React, { useState } from 'react';
+import emi2 from "../data/Homepage/emi2.jpeg"
 
 const EmiCalculator = () => {
   const [formData, setFormData] = useState({
@@ -32,16 +33,18 @@ const EmiCalculator = () => {
   };
 
   return (
-    <div className="mt-8">
-      <h3 className="text-4xl font-bold mb-4">EMI Calculator</h3>
-      <form className="flex flex-col max-w-md mx-auto">
+    <div className=" flex flex-row  justify-around gap-4 h-screen flex-wrap items-center  ">
+     <div className='lg:w-[50%] rounded-xl overflow-hidden border-4 border-yellow-300'> <img src={emi2}></img> </div>
+     <div>
+         <h3 className="text-4xl font-bold mb-4 text-yellow-300">EMI Calculator</h3>
+      <form className="flex flex-col justify-around  flex-wrap items-center max-w-md mx-auto">
         <label className="mb-2">Loan Amount:</label>
         <input
           type="number"
           name="loanAmount"
           value={formData.loanAmount}
           onChange={handleChange}
-          className="border p-2 mb-4"
+          className="border text-black p-2 mb-4"
         />
 
         <label className="mb-2">Interest Rate (%):</label>
@@ -50,7 +53,7 @@ const EmiCalculator = () => {
           name="interestRate"
           value={formData.interestRate}
           onChange={handleChange}
-          className="border p-2 mb-4"
+          className="border  text-black  p-2 mb-4"
         />
 
         <label className="mb-2">Loan Tenure (in years):</label>
@@ -59,13 +62,13 @@ const EmiCalculator = () => {
           name="tenure"
           value={formData.tenure}
           onChange={handleChange}
-          className="border p-2 mb-4"
+          className="border  text-black  p-2 mb-4"
         />
 
         <button
           type="button"
           onClick={calculateEmi}
-          className="bg-blue-500 text-white py-2 px-4 rounded"
+          className=" bg-yellow-300 text-black font-bold mt-3 py-2 px-4 rounded"
         >
           Calculate EMI
         </button>
@@ -75,8 +78,8 @@ const EmiCalculator = () => {
         <div className="mt-4">
           <h4 className="text-xl font-bold">Your Monthly EMI:</h4>
           <p className="text-2xl">{emi} INR</p>
-        </div>
-      )}
+        </div> 
+      )}</div>
     </div>
   );
 };

@@ -10,15 +10,29 @@ import CreditScore from "../Homepage/CreditScore";
 import { MdDone } from "react-icons/md";
 import credit from "../data/Homepage/credit.jpeg"
 import { Link } from "react-router-dom";
+import icici from "../Homepage/icici2.png"
+import hdfc from "../Homepage/hdfc4.webp"
+import axis from "../Homepage/axis2.png"
+import idfc from "../Homepage/idfc.webp"
+import kotak from "../Homepage/kotak5.webp"
 
 
 export const Homepage=()=>{
+
+  const photos = [
+    icici,
+    idfc,
+    hdfc,
+    axis,
+    kotak,
+  
+  ];
     return(
         <>
         <div>
             {/* section-1 */}
             <section className="min-h-screen bg-gradient-to-r from-zinc-700 to-zinc-900 h-auto">
-                <div className="w-11/12 max-w-maxContent flex flex-col items-center justify-between gap-5 mx-auto">
+                <div className=" flex flex-col items-center justify-between gap-5 mx-auto">
                 <div className="flex flex-wrap flex-row homepage-1 gap-[100px] justify-center items-center mx-auto mt-[100px]  text-white">
                 <div className="mx-auto">
                     <h1 className= " mt-4 text-center text-3xl" ><b className=" text-yellow-300">Bid farewell to financial stress</b> <br></br>a worry-free future awaits you.</h1>
@@ -63,7 +77,7 @@ export const Homepage=()=>{
 
   <div className="  homepage-3 mx-auto text-gray-200   flex flex-row mt-[100px] w-screen items-center justify-center gap-[100px] flex-wrap ">
                     <div className="w-[30]%">
-                        <h3 className="text-6xl ">Why Choose <i className=" font-bold mt-2 text-yellow-300"><br></br> DS Fincorp ?</i></h3>
+                        <h3 className="text-6xl ">Why Choose <b className=" font-bold mt-2 text-yellow-300"><br></br> DS Fincorp ?</b></h3>
 
                     </div>
                     <div className=" why w-[50%]">
@@ -80,14 +94,14 @@ export const Homepage=()=>{
                {/* Slider Section */}
               <div className="mt-8 mb-8 bg-yellow-500   lg:w-screen lg:h-[400px] flex flex-row flex-wrap  justify-center gap-[50px] items-center">
                 <div>
-                    <h5 className=" text-3xl  text-zinc-800">
+                    <h5 className=" text-3xl font-bold  text-zinc-800">
                 The best offers from<br></br> India's most
                  trusted banks
                  </h5>
 
                 </div>
                 <div className="lg:w-[800px]  ">
-                <Slider/>
+                <Slider photos={photos}/>
                 </div>
                
                </div>
@@ -100,6 +114,7 @@ export const Homepage=()=>{
 
               {/* Credit Score Section */}
         <section className=" text-black flex flex-col flex-wrap justify-center mb-[50px] items-center  mt-8">
+            <h4 className=" text-yellow-300  text-4xl font-extrabold mb-[50px]">Financial Tools</h4>
           <div className=" flex flex-row w-screen gap-[40px] flex-wrap justify-center  ">
             <div className=" bg-white feature lg:w-[40%] min-w-[300px] flex flex-row flex-wrap items-center justify-center ">
                <div className=" w-[50%] mt-8">
@@ -129,7 +144,7 @@ export const Homepage=()=>{
               <p className=" mt-8 mb-8">
               "Empower your financial journey with precision. Calculate your monthly EMI with ease, ensuring a pathway to financial stability tailored to your needs."
               </p>
-                <Link to={"/creditScore"}>
+                <Link to={"/emicalculator"}>
                 <button className=" bg-yellow-300 rounded-lg  w-[150px] h-[40px] mb-8 ">
                     Evaluate Now
                 </button></Link>
