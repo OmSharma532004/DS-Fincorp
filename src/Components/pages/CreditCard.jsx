@@ -1,36 +1,38 @@
 import React from "react";
-import approved from "../data/Loan/Personal Loan/personal-2.webp"
-import op from "../data/Loan/Personal Loan/op.webp"
-import ce from "../data/Loan/Personal Loan/eligibility.webp"
-import ib from "../data/Loan/Personal Loan/ib.webp"
+import cc from "../data/CreditCard/cc2.png"
+import lc from "../data/CreditCard/lc.webp"
+import access from "../data/CreditCard/access.webp"
+import score from "../data/CreditCard/score.webp"
 import { MdDone } from "react-icons/md";
 import credit from "../data/Homepage/credit.jpeg"
 import { Link } from "react-router-dom";
 import hdfc from "../Homepage/hdfc4.webp"
-import axis from "../Homepage/axis2.png"
-import kotak from "../Homepage/kotak5.webp"
+import axis from "../data/CreditCard/axis4.webp"
+import sbi from "../data/CreditCard/sbi.webp"
+import yes from "../data/CreditCard/yesbank.webp"
+import au from "../data/CreditCard/au.webp"
+import hsbc from "../data/CreditCard/HSBC.webp"
 import idfc from "../Homepage/idfc.webp"
-import kb from "../data/Loan/kreditbee.webp"
-import ps from "../data/Loan/paysense.webp"
-import lt from "../data/Loan/L_T.webp";
-import prefer from "../data/Loan/prefr.webp"
+
+
 import Slider from "../Homepage/Slider";
 import Dropdown from "../common/Dropdown";
-import { TiTick } from "react-icons/ti";
+
 import { IoIosCheckmarkCircleOutline } from "react-icons/io";
-import { AiOutlineEllipsis } from "react-icons/ai";
+
 import { GoDotFill } from "react-icons/go";
 
 
-export const PersonalLoan =()=>{
+export const CreditCard =()=>{
     const photos = [
         hdfc,
         idfc,
-        kotak,
-        kb,
-        lt,
-        ps,
-        prefer
+        axis,
+        yes,
+        sbi,
+        au,
+        hsbc
+
       ];
    
     return(
@@ -38,22 +40,21 @@ export const PersonalLoan =()=>{
        <div className=" flex flex-col flex-wrap justify-center items-start mx-auto gap-8">  
        
        <section className=" mt-8">
-        <div className=" flex  flex-row  w-screen  flex-wrap  justify-center items-center">
+        <div className=" flex  flex-row  w-screen  flex-wrap  justify-center lg:gap-[100px] items-center">
             <div className="lg:w-[30%] p-8 flex flex-col gap-[40px] flex-wrap items-center  justify-center ">
-                <h1 className=" text-5xl"><b className="text-yellow-300">Personal Loan <br></br></b>for a better future</h1>
-                <p className=" text-gray-300 font-extralight text-xl">Personal Loans are ideal to fund your higher education, business expansion,
-                     home improvement, wedding, travel, medical expenses & more. Navi is currently
-                      offering lowest personal loan interest rate starting at 10.50% at flat processing
-                       fee of 3.99%. Get instant approval for affordable personal loans up to 50 Lakh 
-                       for 5 years without pledging collateral or adding guarantor.</p>
+                <h1 className=" text-5xl"><b className="text-yellow-300">Credit cards </b>for all your needs.</h1>
+                <p className=" text-gray-300 font-extralight text-xl">Compare & Apply for the Best Credit Cards 
+                Online. MyMoneyMantra helps you find the best credit cards available in India basis on their 
+                categories, annual fees, and renewal fees. You can compare them and choose what suits you the best,
+                 depending on your need and budget.</p>
                        <button className=" w-[200px] h-[40px] text-xl  text-black font-semibold bg-yellow-300 rounded-xl">
                         Compare & Apply
                        </button>
 
 
             </div>
-            <div>
-                <img src={approved}></img>
+            <div className=" animate-pulse rotate-12 ">
+                <img width={600}  src={cc}></img>
 
 
             </div>
@@ -61,19 +62,17 @@ export const PersonalLoan =()=>{
        </section>
 
        <section className="flex-col flex flex-wrap justify-center items-center  ">
-        <div className=" flex flex-row bg-white mx-auto text-black flex-wrap justify-around py-[50px] gap-10 w-[90%]    ">
+        <div className=" flex rounded-xl flex-row bg-white mx-auto text-black flex-wrap justify-around py-[50px] gap-10 w-[90%]    ">
             <div className="w-[40%]">
-            <h1 className="text-4xl font-bold ">Here find the best personal loan offers for you!</h1>
-            <p className="mt-8 font-extralight text-gray-500 text-xl">You are just a step away from the best Personal loan offer near you. MyMoneyMantra
-                 representative will contact you with the best cash loan offer as you share your 
-                 contact name, email & mobile number.</p>
+            <h1 className="text-4xl font-bold ">Let’s find the best credit card for you.</h1>
+            <p className="mt-8 font-extralight text-gray-500 text-xl">Share your preferences, fill form & we will find the best match for you.</p>
             </div>
             <div className=" ">
                 <form className="flex flex-col gap-8 flex-wrap  items-end justify-center">
                     <input className=" border  p-4" type="text"  placeholder="Full Name" color="black" name="fullName"  />
                     <input className=" border  p-4" type="text"  placeholder="Phone No" color="black" name="phone"  />
                     <input className=" border  p-4" type="text"  placeholder="Email" color="black" name="email"  />
-                    <input className=" border  p-4" type="text"  placeholder="Loan Amount" color="black" name="amount"  />
+                    <input className=" border  p-4" type="text"  placeholder="Residence pincode" color="black" name="amount"  />
                     <button className=" bg-yellow-300 text-black text-xl  p-4 rounded-xl mt-5">
                         Enquire Now
                     </button>
@@ -81,36 +80,33 @@ export const PersonalLoan =()=>{
             </div>
 
         </div>
-        <div className=" w-[90%]  p-8 pt-[40px] pb-[100px] mb-[50px] bg-yellow-300 text-black flex flex-row flex-wrap mt-8 
+        <div className=" w-[90%] rounded-xl  p-8 pt-[40px] pb-[100px] mb-[50px] bg-yellow-300 text-black flex flex-row flex-wrap mt-8 
         justify-around items-center ">
             <div className=" flex  flex-col items-center justify-center  flex-wrap gap-5 lg:w-[25%]">
-                <img src={op}></img>
+                <img src={lc}></img>
                 <h2 className="font-bold text-2xl ">
-                    Online Application
+                Loans & credit cards
 
                 </h2>
                 <p className=" text-gray-800 font-light">
-                Compare personal loan offers from our 100+ finance partners and apply online within a few minutes
-
+                Check your latest credit score instantly online and get access to the list of preapproved loans & credit card offers for your profile.
                 </p>
             </div>
             <div className="  flex flex-col items-center justify-center  flex-wrap gap-5 lg:w-[25%]">
-                <img src={ce}></img>
+                <img src={access}></img>
                 <h2 className=" font-bold text-2xl">
-                Check Eligibility
+                Free & unlimited access
                 </h2>
                 <p className=" text-gray-800 font-light">
-                Check your personal loan eligibility for personal loan with Personal Loan EMI Calculator.
-                </p>
+                Get free & unlimited access to your complete credit information report. Analyse your credit history & improve your credit score.</p>
             </div><div className=" flex flex-col items-center justify-center  flex-wrap gap-5 lg:w-[25%]">
-                <img src={ib}></img>
+                <img src={score}></img>
                 <h2 className="font-bold text-2xl ">
-                Instant Disbursal
+                Check Experian Score 24x7
 
                 </h2>
                 <p className=" text-gray-800 font-light">
-                On successful approval, get an instant disbursal of loan amount directly to your account
-                </p>
+                Check your Experian credit score 24X7. Protect yourself against identity thefts, bank reporting errors & poor credit rating. </p>
             </div>
 
 

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { AiOutlineEllipsis } from "react-icons/ai";
+import { RiArrowDropDownLine } from "react-icons/ri";
 
 const Dropdown = ({details,heading}) => {
   
@@ -11,14 +12,18 @@ const Dropdown = ({details,heading}) => {
 
   return (
     <div>
-       <div  className="  bg-white border-4 border-black rounded-xl p-1 text-black w-[100%] flex flex-col flex-wrap   transition-all duration-300 ">
-          <div onClick={() => toggleDropdown()} className="   font-semibold  text-xl">
+       <div className="   bg-gradient-to-r from-zinc-600 to-zinc-700   border-black rounded-xl p-1 text-yellow-300 w-[100%] flex flex-col flex-wrap   ">
+        <div onClick={() => toggleDropdown()}  className='  flex flex-row justify-between items-center '>
+        <div className="   font-semibold  text-xl">
             <h1>{heading}</h1>
-            <AiOutlineEllipsis style={{ fontSize:"3rem" }} />
+        
+          
+        </div>
+        <div>   <RiArrowDropDownLine style={{fontSize:"2rem"}} /></div>
           </div>
-          <div className=' text-l w-[100%] mx-auto '>
+          <div className=' text-white transition-all duration-200 text-l w-[100%] mt-4 mx-auto '>
           {expanded && (
-            <div className=" pb-4">
+            <div className="  pb-4">
                 <p>{details}</p>
         
              

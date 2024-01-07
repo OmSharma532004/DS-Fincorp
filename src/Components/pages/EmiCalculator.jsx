@@ -34,7 +34,7 @@ const EmiCalculator = () => {
 
   return (
     <div className=" flex flex-row  justify-around gap-4 h-screen flex-wrap items-center  ">
-     <div className='lg:w-[50%] rounded-xl overflow-hidden border-4 border-yellow-300'> <img src={emi2}></img> </div>
+     <div className='lg:w-[50%] emi transition-all duration-200 rounded-xl overflow-hidden border-4 border-yellow-300'> <img src={emi2}></img> </div>
      <div>
          <h3 className="text-4xl font-bold mb-4 text-yellow-300">EMI Calculator</h3>
       <form className="flex flex-col justify-around  flex-wrap items-center max-w-md mx-auto">
@@ -75,7 +75,7 @@ const EmiCalculator = () => {
       </form>
 
       {emi !== null && (
-        <div className="mt-4">
+        <div className="mt-4 bg-yellow-300 text-black">
           <h4 className="text-xl font-bold">Your Monthly EMI:</h4>
           <p className="text-2xl">{emi} INR</p>
         </div> 

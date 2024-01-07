@@ -106,10 +106,10 @@ export const Navbar = () => {
                   <Link to="/loan/personal-loan">Personal Loan</Link>
                 </li>
                 <li>
-                  <Link to="/home-loan">Home Loan</Link>
+                  <Link to="/loan/home-loan">Home Loan</Link>
                 </li>
                 <li>
-                  <Link to="/education-loan">Education Loan</Link>
+                  <Link to="/loan/education-loan">Education Loan</Link>
                 </li>
               </ul>
             </li>

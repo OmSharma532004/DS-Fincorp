@@ -61,5 +61,17 @@
     width: 90%;
   }
 }
+.emi {
+  animation: example 2s linear 2s forwards;
+  position: relative;
+}
+
+@keyframes example {
+  0%   { opacity: 20; left: -200px; top: 0px; }
+  100% { opacity: 60; left: 0px; top: 0px; }
+}
+
+
+
 
 

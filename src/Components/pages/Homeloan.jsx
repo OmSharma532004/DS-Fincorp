@@ -1,5 +1,5 @@
 import React from "react";
-import approved from "../data/Loan/Personal Loan/personal-2.webp"
+import hl from "../data/Loan/Home Loan/hl.png"
 import op from "../data/Loan/Personal Loan/op.webp"
 import ce from "../data/Loan/Personal Loan/eligibility.webp"
 import ib from "../data/Loan/Personal Loan/ib.webp"
@@ -7,45 +7,36 @@ import { MdDone } from "react-icons/md";
 import credit from "../data/Homepage/credit.jpeg"
 import { Link } from "react-router-dom";
 import hdfc from "../Homepage/hdfc4.webp"
-import axis from "../Homepage/axis2.png"
+import pnb from "../data/Loan/Home Loan/pnbhousing.webp"
+import federal from "../data/Loan/Home Loan/federal.webp"
 import kotak from "../Homepage/kotak5.webp"
-import idfc from "../Homepage/idfc.webp"
-import kb from "../data/Loan/kreditbee.webp"
-import ps from "../data/Loan/paysense.webp"
-import lt from "../data/Loan/L_T.webp";
-import prefer from "../data/Loan/prefr.webp"
+
 import Slider from "../Homepage/Slider";
 import Dropdown from "../common/Dropdown";
 import { TiTick } from "react-icons/ti";
 import { IoIosCheckmarkCircleOutline } from "react-icons/io";
 import { AiOutlineEllipsis } from "react-icons/ai";
 import { GoDotFill } from "react-icons/go";
-
-
-export const PersonalLoan =()=>{
-    const photos = [
+import hl2 from "../data/Loan/Home Loan/hl2tick.svg"
+export const HomeLoan=()=>{
+    const photos=[
         hdfc,
-        idfc,
+        pnb,
+        federal,
         kotak,
-        kb,
-        lt,
-        ps,
-        prefer
-      ];
-   
+    ]
     return(
         <>
-       <div className=" flex flex-col flex-wrap justify-center items-start mx-auto gap-8">  
-       
-       <section className=" mt-8">
-        <div className=" flex  flex-row  w-screen  flex-wrap  justify-center items-center">
+         <div className=" flex flex-col flex-wrap justify-center items-start mx-auto gap-8"> 
+         <section className=" mt-8">
+        <div className=" flex  flex-row  w-screen  flex-wrap  justify-center lg:gap-[100px] items-center">
             <div className="lg:w-[30%] p-8 flex flex-col gap-[40px] flex-wrap items-center  justify-center ">
-                <h1 className=" text-5xl"><b className="text-yellow-300">Personal Loan <br></br></b>for a better future</h1>
-                <p className=" text-gray-300 font-extralight text-xl">Personal Loans are ideal to fund your higher education, business expansion,
-                     home improvement, wedding, travel, medical expenses & more. Navi is currently
-                      offering lowest personal loan interest rate starting at 10.50% at flat processing
-                       fee of 3.99%. Get instant approval for affordable personal loans up to 50 Lakh 
-                       for 5 years without pledging collateral or adding guarantor.</p>
+                <h1 className=" text-5xl"><b className="text-yellow-300">Home Loans to build <br></br></b>your dream home.</h1>
+                <p className=" text-gray-300 font-extralight text-xl">Home loan is a secured loan that can be availed 
+                for buying/ constructing a residential property. Currently Home Loan interest
+                rate starts at 8.50% p.a. Most Banks & HFCs sanction 75% to 90% of property’s value as home
+                 loans. Low processing fee, provisional sanction, 30 years of tenure & flexible EMIs are some
+                  of the key benefits of home loans.</p>
                        <button className=" w-[200px] h-[40px] text-xl  text-black font-semibold bg-yellow-300 rounded-xl">
                         Compare & Apply
                        </button>
@@ -53,7 +44,7 @@ export const PersonalLoan =()=>{
 
             </div>
             <div>
-                <img src={approved}></img>
+                <img src={hl}></img>
 
 
             </div>
@@ -63,10 +54,11 @@ export const PersonalLoan =()=>{
        <section className="flex-col flex flex-wrap justify-center items-center  ">
         <div className=" flex flex-row bg-white mx-auto text-black flex-wrap justify-around py-[50px] gap-10 w-[90%]    ">
             <div className="w-[40%]">
-            <h1 className="text-4xl font-bold ">Here find the best personal loan offers for you!</h1>
-            <p className="mt-8 font-extralight text-gray-500 text-xl">You are just a step away from the best Personal loan offer near you. MyMoneyMantra
-                 representative will contact you with the best cash loan offer as you share your 
-                 contact name, email & mobile number.</p>
+            <h1 className="text-4xl font-bold ">Best Home Loan Offers Starting @8.50% p.a.</h1>
+            <p className="mt-8 font-extralight text-gray-500 text-xl">You are just a few clicks away from
+             the best Home Loan offer in your city. Currently home loan interest rate starts at 8.50% p.a for
+              all loan amounts. Share your name, mobile number & email to check your eligibility and get a 
+              list of most affordable home loan schemes</p>
             </div>
             <div className=" ">
                 <form className="flex flex-col gap-8 flex-wrap  items-end justify-center">
@@ -84,33 +76,30 @@ export const PersonalLoan =()=>{
         <div className=" w-[90%]  p-8 pt-[40px] pb-[100px] mb-[50px] bg-yellow-300 text-black flex flex-row flex-wrap mt-8 
         justify-around items-center ">
             <div className=" flex  flex-col items-center justify-center  flex-wrap gap-5 lg:w-[25%]">
-                <img src={op}></img>
+                <img src={hl2}></img>
                 <h2 className="font-bold text-2xl ">
-                    Online Application
+                Lowest Interest Rate
 
                 </h2>
                 <p className=" text-gray-800 font-light">
-                Compare personal loan offers from our 100+ finance partners and apply online within a few minutes
-
+                Home loan interest rates are the lowest ever in the past 15 years. With raining Best offers on home loan, currently you can avail of the best interest rate on home loans starting @ 8.50% p.a for all loan amounts.
                 </p>
             </div>
             <div className="  flex flex-col items-center justify-center  flex-wrap gap-5 lg:w-[25%]">
-                <img src={ce}></img>
+                <img src={hl2}></img>
                 <h2 className=" font-bold text-2xl">
-                Check Eligibility
+                Affordable EMI plans
                 </h2>
                 <p className=" text-gray-800 font-light">
-                Check your personal loan eligibility for personal loan with Personal Loan EMI Calculator.
-                </p>
+                You can now avail the lowest Home Loan EMI at just Rs. 769/- per lakh with maximum repayment flexibility. Some options are Step-Up EMIs, Step Down EMIs, Moratorium, OD facility, balance transfer, top up and more.</p>
             </div><div className=" flex flex-col items-center justify-center  flex-wrap gap-5 lg:w-[25%]">
-                <img src={ib}></img>
+                <img src={hl2}></img>
                 <h2 className="font-bold text-2xl ">
-                Instant Disbursal
+                No Foreclosure Charge
 
                 </h2>
                 <p className=" text-gray-800 font-light">
-                On successful approval, get an instant disbursal of loan amount directly to your account
-                </p>
+                Home Loans at floating interest rate (linked to repo rate) offer you ultimate prepayment flexibility. There is no part or full prepayment charge. You can prepay early & reduce interest cost as per your cash flows.</p>
             </div>
 
 
@@ -124,8 +113,13 @@ export const PersonalLoan =()=>{
                  </h5>
 
                 </div>
-                <div className="lg:w-[800px]  ">
-                <Slider photos={photos}/>
+                <div className="lg:w-[800px]  flex flex-row flex-wrap justify-center gap-[30px] items-center ">
+          <div className=" w-[166px] h-[120px] rounded-2xl flex justify-center items-center bg-white ">     <img width={80} height={80} src={hdfc}></img></div>
+          <div className=" w-[166px] h-[120px] rounded-2xl flex justify-center items-center bg-white ">     <img width={80} height={80} src={kotak}></img></div>
+          <div className=" w-[166px] h-[120px] rounded-2xl flex justify-center items-center bg-white ">     <img width={80} height={80} src={pnb}></img></div>
+          <div className=" w-[166px] h-[120px] rounded-2xl flex justify-center items-center bg-white ">     <img width={80} height={80} src={federal}></img></div>
+         
+               
                 </div>
                
                </div>
@@ -185,10 +179,11 @@ export const PersonalLoan =()=>{
            
           </div>
         </section>
-        {/* Learn More */}
-        <h6 className=" w-screen  text-center mx-auto text-4xl text-yellow-300 font-bold">Learn More About Personal Loan</h6>
-        <section className=" text-black   rounded-xl flex-col flex     w-[80%] mx-auto  mb-[50px]  mt-8">
-            <div className="  border-black  p-4">
+
+         {/* Learn More */}
+         <h6 className=" w-screen  text-center mx-auto text-4xl text-yellow-300 font-bold">Learn More About Personal Loan</h6>
+        <section className=" text-black  bg-yellow-300 rounded-xl flex-col flex     w-[80%] mx-auto  mb-[50px]  mt-8">
+            <div className="  border-black border p-4">
             <Dropdown heading={"Personal Loan: Key Highlights "} details={<div>
                 <ol >
                     <li className=" flex gap-2 flex-wrap"><div className=" mt-1"><IoIosCheckmarkCircleOutline /></div> Current lowest personal loan interest rates start from 10.50% p.a</li>
@@ -202,14 +197,14 @@ export const PersonalLoan =()=>{
       
                 
             </div>
-              <div className=" border-black  p-4">
+              <div className=" border-black border p-4">
             <Dropdown heading={"Personal Loan Overview "} details={<div>
                 A personal loan is the best option to get access to funds in case of an emergency. Once you fulfill the necessary Personal Eligibility Criteria, you can meet any expense like medical emergency, travel needs, education fees, etc. with this simple, unsecured loan. 
             </div>}/>
       
                 
             </div>
-            <div className=" p-4 border-black   ">
+            <div className=" p-4 border-black border  ">
             <Dropdown heading={"Types of Personal Loan"} details={<div>
                 <ol className=" flex-col flex gap-2">
                 <li className=" flex gap-2 "><div className=" mt-1"><IoIosCheckmarkCircleOutline /></div><div><b>Travel Loan:  </b>These personal loan schemes are for people who love travelling. This loan is called by many names, including Travel Loan, vacation loan, and holiday loan. You can avail this loan to travel around the world, and pay the bills latrine affordable EMIs. You can also get travel insurance as an added benefit with this loan.</div></li>
@@ -227,7 +222,7 @@ export const PersonalLoan =()=>{
       
                 
             </div>
-            <div className=" p-4 border-black   ">
+            <div className=" p-4 border-black border  ">
             <Dropdown heading={"Features & Benefits of Personal Loan"} details={<div>
                 <ol className=" flex-col flex gap-2">
                 <li className=" flex gap-2 "><div className=" mt-1"><IoIosCheckmarkCircleOutline /></div><div><b>The rate of Interest:</b>The Rate of Interest on Personal Loans starts with 10.50%  depending on your credit score, income and so forth.</div></li>
@@ -244,7 +239,7 @@ export const PersonalLoan =()=>{
       
                 
             </div>
-            <div className=" p-4 w-[100%]  border-black   ">
+            <div className=" p-4 w-[100%]  border-black border  ">
             <Dropdown heading={"Personal Loan Interest Rates & Charges"} details={<div className="w- mx-auto overflow-auto"> 
                 <table  className=" lg:max-w-[100%] mx-auto  mb-[30px] border-2 border-black table">
                    <tr >
@@ -306,7 +301,7 @@ export const PersonalLoan =()=>{
                 
             </div>
 
-            <div className=" p-4 border-black   ">
+            <div className=" p-4 border-black border  ">
             <Dropdown heading={"Features & Benefits of Personal Loan"} details={<div>
                 <ol className=" flex-col flex gap-2">
                 <li className=" flex gap-2 flex-wrap"><div className=" mt-1"><IoIosCheckmarkCircleOutline /></div>Click on the ‘Compare and Apply’ option </li>
@@ -323,7 +318,7 @@ export const PersonalLoan =()=>{
       
                 
             </div>
-            <div className=" p-4 border-black   ">
+            <div className=" p-4 border-black border  ">
             <Dropdown heading={"Features & Benefits of Personal Loan"} details={<div className=" overflow-auto">
               <table className=" mx-auto lg:w-[60%]   mb-[30px]">
                 <tr>
@@ -357,7 +352,7 @@ export const PersonalLoan =()=>{
       
                 
             </div>
-            <div className=" p-4 border-black   ">
+            <div className=" p-4 border-black border  ">
             <Dropdown heading={"Factors Affecting the Eligibility of a Personal Loan"} details={<div>
                 <ol  className=" flex-col flex gap-2">
                 <li className=" flex gap-2 "><div className=" mt-1"><IoIosCheckmarkCircleOutline /></div><div><b>Credit score:  </b> This is the most crucial eligibility factor. A credit score of 700 or above is typically considered a good score for personal loans. The better your credit score, the higher are your chances to get a loan online.  </div></li>
@@ -373,7 +368,7 @@ export const PersonalLoan =()=>{
       
                 
             </div>
-            <div className=" p-4 border-black   ">
+            <div className=" p-4 border-black border  ">
             <Dropdown heading={"Features & Benefits of Personal Loan"} details={<div className=" overflow-auto">
               <table className=" mx-auto lg:w-[60%]   mb-[30px]">
                 <tr>
@@ -423,7 +418,7 @@ export const PersonalLoan =()=>{
       
                 
             </div>
-            <div className=" p-4 border-black   ">
+            <div className=" p-4 border-black border  ">
             <Dropdown heading={"Points to Keep in Mind Before Taking a Personal Loan"} details={<div>
                 <ol  className=" flex-col flex gap-2">
                 <li className=" flex gap-2 "><div className=" mt-1"><IoIosCheckmarkCircleOutline /></div><div><b> Keep your credit score high: </b> A credit score represents your creditworthiness based on your past repayment history. Try to repay your existing debts on time and regularly. Clear your existing loan before applying for a new loan. This will improve your credit score. To avail a personal loan you should have a good credit score (preferably 700 or above).  </div></li>
@@ -439,7 +434,7 @@ export const PersonalLoan =()=>{
       
                 
             </div>
-            <div className=" p-4 border-black   ">
+            <div className=" p-4 border-black border  ">
             <Dropdown heading={"How to use Personal Loan Effectively (Tips & Advice)"} details={<div>
                 <p>
 An unsecured loan like a personal loan can affect your CIBIL score negatively. So, even with the Best Personal Loan In India, you need to keep some tips in mind: </p>
@@ -459,11 +454,11 @@ An unsecured loan like a personal loan can affect your CIBIL score negatively. S
 
         </section>
 
-            
-       </div>
-        
+         
+         
+          </div>
+       
         </>
-
     )
 
 }
