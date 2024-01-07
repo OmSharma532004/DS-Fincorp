@@ -6,6 +6,8 @@ import { Homepage } from './Components/pages/Homepage';
 import CreditScore from './Components/Homepage/CreditScore';
 import EmiCalculator from './Components/pages/EmiCalculator';
 import { PersonalLoan } from './Components/pages/PersonalLoan';
+import { HomeLoan } from './Components/pages/Homeloan';
+import { CreditCard } from './Components/pages/CreditCard';
 
 function App() {
   return (
@@ -16,6 +18,8 @@ function App() {
     <Route path="/creditScore" element={<CreditScore/>}/>
     <Route path="/emicalculator" element={<EmiCalculator/>}/>
     <Route path='/loan/personal-loan' element={<PersonalLoan/>}/>
+    <Route path='/loan/home-loan' element={<HomeLoan/>}/>
+    <Route path='/credit-card' element={<CreditCard/>}/>
    </Routes>
   
     </div>
